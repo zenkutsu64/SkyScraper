@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyScraper", "src\SkyScraper\SkyScraper.csproj", "{E36E904E-2521-472F-88B4-D6F1F8E0D3B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyScraper.Tests", "src\SkyScraper.Tests\SkyScraper.Tests.csproj", "{923D516F-D88E-425D-AFE0-5A42BC0B92F0}"
@@ -45,8 +47,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{3CFB69DC-A6F1-44AF-A621-61F5DE2A39AA} = {FCBB2264-763D-4AAA-A3D0-0F13904A7BBF}
 		{923D516F-D88E-425D-AFE0-5A42BC0B92F0} = {FCBB2264-763D-4AAA-A3D0-0F13904A7BBF}
+		{3CFB69DC-A6F1-44AF-A621-61F5DE2A39AA} = {FCBB2264-763D-4AAA-A3D0-0F13904A7BBF}
 		{E57DCD40-C46F-4933-814E-6AFA263E616A} = {FCBB2264-763D-4AAA-A3D0-0F13904A7BBF}
 	EndGlobalSection
 EndGlobal
