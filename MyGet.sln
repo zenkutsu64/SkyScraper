@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D978D7D1-54F4-4D45-B5C5-276EC24EEDA0}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -9,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D978D7
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyScraper", "src\SkyScraper\SkyScraper.csproj", "{E36E904E-2521-472F-88B4-D6F1F8E0D3B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyScrape", "SkyScrape\SkyScrape.csproj", "{0F790916-5E85-474D-90CD-6A4D3864927D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +24,10 @@ Global
 		{E36E904E-2521-472F-88B4-D6F1F8E0D3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E36E904E-2521-472F-88B4-D6F1F8E0D3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E36E904E-2521-472F-88B4-D6F1F8E0D3B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F790916-5E85-474D-90CD-6A4D3864927D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F790916-5E85-474D-90CD-6A4D3864927D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F790916-5E85-474D-90CD-6A4D3864927D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F790916-5E85-474D-90CD-6A4D3864927D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

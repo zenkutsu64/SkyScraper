@@ -57,6 +57,7 @@ namespace SkyScraper
             DoScrape(uri).Wait();
         }
 
+        //This is where the rubber hits the road
         async Task DoScrape(Uri uri)
         {
             OnScrape(uri);
@@ -93,7 +94,7 @@ namespace SkyScraper
                 localLinks = localLinks.Where(x => !IgnoreLinks.IsMatch(x.ToString()));
             if (MaxDepth.HasValue)
                 localLinks = localLinks.Where(x => x.Segments.Length <= MaxDepth + 1);
-            var tasks = localLinks.Select(DoScrape).ToArray();
+            var tasks = localLinks.Select(DoScrape).ToArray(); //recursive call to scape the links found
             Task.WaitAll(tasks);
         }
 
