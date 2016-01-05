@@ -85,8 +85,15 @@ namespace SkyScraper
             if (!pageBase.EndsWith("/"))
                 pageBase += "/";
             var pageBaseUri = new Uri(pageBase);
+
+            //only use of the CsQuery lib found so far
             CQ cq = htmlDoc.Html;
+
+            //Doing some selecting: anchors and hrefs using JQuery-like syntax
+            //out of the box, DoScrape does only the simplest finding of links
             var links = cq["a"].Select(x => x.GetAttribute("href")).Where(x => x != null);
+
+            //looks like we're setup to not follow external links
             var localLinks = LocalLinks(links).Select(x => NormalizeLink(x, pageBaseUri)).Where(x => x.ToString().StartsWith(baseUri.ToString()) && x.ToString().Length <= 2048);
             if (IncludeLinks != null)
                 localLinks = localLinks.Where(x => IncludeLinks.IsMatch(x.ToString()));

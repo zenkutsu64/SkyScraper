@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SkyScraper
 {
-    public class HttpClient : IHttpClient
+    public class HttpClient : IHttpClient //we can do this! SkyScraper namespace HttpClient is distinct from System.Net.Http
     {
         readonly System.Net.Http.HttpClient httpClient;
         string userAgentName;
